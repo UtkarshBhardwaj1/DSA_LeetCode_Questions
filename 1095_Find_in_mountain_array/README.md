@@ -26,28 +26,26 @@ Submissions making more than 100 calls to `MountainArray.get` will be judged Wro
 ## Example 1
 
 **Input**: 
-```plaintext
-mountainArr = [1,2,3,4,5,3,1], target = 3
-Output:
-
-plaintext
+```
+`mountainArr = [1,2,3,4,5,3,1], target = 3`
+**Output**:
 2
-Explanation: 3 exists in the array, at index=2 and index=5. Return the minimum index, which is 2.
+-Explanation: 3 exists in the array, at index=2 and index=5. Return the minimum index, which is 2.
+```
+##Example 2
+**Input**: 
+```
 
-Example 2
-Input:
+`mountainArr = [0,1,2,4,2,1], target = 3`
+##Output:
 
-plaintext
-mountainArr = [0,1,2,4,2,1], target = 3
-Output:
-
-plaintext
 -1
-Explanation: 3 does not exist in the array, so we return -1.
-
+-Explanation: 3 does not exist in the array, so we return -1.
+```
 Constraints
-3 <= mountainArr.length() <= 10^4
+-3 <= mountainArr.length() <= 10^4
 
-0 <= target <= 10^9
+-0 <= target <= 10^9
 
-0 <= mountainArr.get(index) <= 10^9
+-0 <= mountainArr.get(index) <= 10^9
+```
