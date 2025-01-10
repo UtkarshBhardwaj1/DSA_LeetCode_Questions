@@ -5,7 +5,7 @@ Given an array nums, return true if the array was originally sorted in non-decre
 
 There may be duplicates in the original array.
 
-# Note: An array A rotated by x positions results in an array B of the same length such that A[i] == B[(i+x) % A.length], where % is the modulo operation.
+#### Note: An array A rotated by x positions results in an array B of the same length such that A[i] == B[(i+x) % A.length], where % is the modulo operation.
 
  
 
