@@ -30,7 +30,7 @@ Return the minimum integer k such that she can eat all the bananas within h hour
 
 #### Constraints:
 
-- '1 <= piles.length <= 104`
-- 'piles.length <= h <= 109`
-- '1 <= piles[i] <= 109`
+- `1 <= piles.length <= 104`
+- `piles.length <= h <= 109`
+- `1 <= piles[i] <= 109`
 
