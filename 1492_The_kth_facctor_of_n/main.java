@@ -12,4 +12,20 @@ class Solution {
             return -1;
         }
     }
+
+    /******/
+    int factor = 1;
+        int output = -1;
+        if (k == 1) return factor = 1;
+        for (int i = 2; i <= n / 2; i++) {
+            if (n % i == 0) {
+                factor++;
+                if (factor == k) {
+                    output = i;
+                }
+            }
+        }
+        if(output==-1&&k==(factor+1)){
+            output=n;
+        }
 }
