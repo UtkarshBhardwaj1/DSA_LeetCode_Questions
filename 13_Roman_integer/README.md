@@ -45,29 +45,4 @@ This project provides a solution to convert a Roman numeral into an integer. Rom
 - `s` contains only the characters (`'I'`, `'V'`, `'X'`, `'L'`, `'C'`, `'D'`, `'M'`).
 - It is guaranteed that `s` is a valid Roman numeral in the range [1, 3999].
 
-## Implementation
-Here's a Python implementation of the Roman to Integer conversion:
 
-```python
-def roman_to_int(s: str) -> int:
-    roman_values = {
-        'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000
-    }
-    
-    total = 0
-    prev_value = 0
-    
-    for char in reversed(s):
-        value = roman_values[char]
-        if value < prev_value:
-            total -= value
-        else:
-            total += value
-        prev_value = value
-    
-    return total
-
-# Examples
-print(roman_to_int("III"))    # Output: 3
-print(roman_to_int("LVIII"))  # Output: 58
-print(roman_to_int("MCMXCIV"))  # Output: 1994
